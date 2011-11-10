@@ -8,8 +8,6 @@ class Service extends CI_Controller {
 		
 		parent::__construct();
 		
-		global $htdocs_root_folder;
-		
 		$ajap_dir = realpath( APPPATH . "../creative-area/AJAP/src" );
 		
 		require_once( "$ajap_dir/Ajap.php" );
