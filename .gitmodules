@@ -1,0 +1,3 @@
+[submodule "creative-area/AJAP"]
+	path = creative-area/AJAP
+	url = git@github.com:creative-area/AJAP.git
