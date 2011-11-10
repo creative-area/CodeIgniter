@@ -11,3 +11,7 @@ application/logs/*
 application/config/env.php
 
 public/.htaccess
+
+.buildpath
+.project
+.settings
