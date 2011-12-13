@@ -39,10 +39,10 @@ if ( file_exists($env_path)) {
 switch (ENVIRONMENT)
 {
 	case 'development':
+	case 'testing':
 		error_reporting(E_ALL);
 	break;
 
-	case 'testing':
 	case 'production':
 		error_reporting(0);
 	break;
