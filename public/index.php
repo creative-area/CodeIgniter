@@ -19,9 +19,12 @@
  *
  */
 
-@require_once(dirname(__FILE__).'/../application/config/env.php');
-if (!defined('ENVIRONMENT')) {
-	define('ENVIRONMENT', 'production');
+$env_path = dirname(__FILE__).'/../application/config/env.php';
+if ( file_exists($env_path)) {
+	require_once($env_path);
+	if (!defined('ENVIRONMENT')) {
+		define('ENVIRONMENT', 'production');
+	}
 }
 
 /*
@@ -36,10 +39,10 @@ if (!defined('ENVIRONMENT')) {
 switch (ENVIRONMENT)
 {
 	case 'development':
+	case 'testing':
 		error_reporting(E_ALL);
 	break;
 
-	case 'testing':
 	case 'production':
 		error_reporting(0);
 	break;

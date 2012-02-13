@@ -10,6 +10,8 @@ application/logs/*
 
 application/config/env.php
 
+application/config/development/*.php
+
 public/.htaccess
 
 .buildpath
